@@ -25,30 +25,15 @@ class Actions:
     def do_send_keys(self, element, value):
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(element)).send_keys(value)
 
-    def select_from_dd(self, dropdown, text):
-        ddelement = Select(WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(dropdown)))
-        ddelement.select_by_visible_text(text)
-
     def get_text(self, element):
         return WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(element)).text
-
-    def perform_keyboard_operation(self):
-        time.sleep(5)
-        webdriver.ActionChains(self.driver).send_keys(Keys.ESCAPE).perform()
-
-    def do_mouse_hovering(self, element):
-        a = ActionChains(self.driver)
-        elem = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(element))
-        a.move_to_element(elem).perform()
-
-    def get_attribute_data(self, element, name):
-        return WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(element)).get_attribute(name)
 
     def get_rows(self, element):
         return WebDriverWait(self.driver, 10).until(EC.presence_of_all_elements_located(element))
 
     def get_alert(self):
         alert = Alert(self.driver)
+        print(alert.text)
         return alert.text
 
     def get_title(self):
