@@ -1,4 +1,5 @@
+import hashlib
 class BasicData:
 
-    Email = "qa@julesai.com"
-    Password: 'QaJULES2023!'
+    EMAIL = "qa@julesai.com"
+    PASSWORD = 'QaJULES2023!'
