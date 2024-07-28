@@ -7,7 +7,7 @@ The framework is following POM(Page object pattern) design pattern.
 2. Pre-requisite/Environment set-up
 First you need to clone the repo on your local using below command:
 
-git clone https://github.com/trackier/trackier-automation-qa
+git clone 
 Then you need to install packages using pip(use pip3 for mac) command. Run the command below in terminal:
 
 a. Install python:
