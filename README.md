@@ -1,6 +1,6 @@
-Trackier Test UI automation
+Jules Test UI automation
 1. Introduction
-This project is all about e2e test automation framework for Trackier performance Dashboard using Selenium-Webdriver for UI automation, python for scripting and pytest for creating e2e test framework.
+This project is all about e2e test automation framework  using Selenium-Webdriver for UI automation, python for scripting and pytest for creating e2e test framework.
 
 The framework is following POM(Page object pattern) design pattern.
 
