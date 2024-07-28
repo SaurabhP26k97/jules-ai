@@ -1,36 +1,27 @@
-Jules Test UI automation
-1. Introduction
-This project is all about e2e test automation framework  using Selenium-Webdriver for UI automation, python for scripting and pytest for creating e2e test framework.
+Steps : 
 
-The framework is following POM(Page object pattern) design pattern.
+Pre-requisite/Environment set-up First you need to clone the repo on your local using below command:
 
-2. Pre-requisite/Environment set-up
-First you need to clone the repo on your local using below command:
+git clone https://github.com/SaurabhP26k97/jules-ai
 
-git clone  https://github.com/SaurabhP26k97/jules-ai
-Then you need to install packages using pip(use pip3 for mac) command. Run the command below in terminal:
+a. Install python: $ brew install python
 
-a. Install python:
+b. $ pip3 install pytest
 
-$ brew install python
+c. $ pip3 install webdriver-manager
 
-b. install Selenium
+d. $ pip3 install selenium
 
-$ pip3 install python
+e. $ pip3 install pytest-html-reporter
 
-c. install pytest
 
-$ pip3 install pytest
-
-d. pip3 install Webdriver-manager:
-
-$ pip3 install webdriver-manager
-
-3. Project Features->
+Project Features->
 framework follows page object pattern
 data-driven tests
-tests can be run on popular browsers - Chrome and Firefox are prconfigured in DriverFactory class and both can be select in conftest.py
-4. Running Tests
-To run tests, run the following command
+tests can be run on popular browsers - Chrome
 
-  pytest file_name.py
+Running Tests : 
+pytest 
+
+Generating reports : pytest --html-report=./report --title='PYTEST REPORT'
+
